@@ -1,0 +1,48 @@
+version: '2'
+services:
+  postgres:
+    image: "postgres:alpine"
+    container_name: postgres-mainnet
+    restart: always
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+    networks:
+      - core
+    environment:
+     POSTGRES_PASSWORD: password
+     POSTGRES_DB: core_mainnet
+     POSTGRES_USER: node
+
+  core:
+    image: cauriland/core
+    container_name: core-mainnet
+    restart: always
+    ports:
+     - "4301:4301"
+     - "4303:4303"
+     - "4343:4343"
+     - "127.0.0.1:4304:4304"
+     - "127.0.0.1:8010:8010"
+    cap_add:
+      - SYS_NICE
+      - SYS_RESOURCE
+      - SYS_TIME
+    volumes:
+     - ~/.config/cauri-core:/home/node/.config/cauri-core
+     - ~/.local/share/cauri-core:/home/node/.local/share/cauri-core
+     - ~/.local/state/cauri-core:/home/node/.local/state/cauri-core
+     - /etc/localtime:/etc/localtime:ro
+     - ./enc:/run/secrets
+    networks:
+      - core
+    env_file: ./mainnet.env
+    tty: true
+    links:
+     - postgres
+    depends_on:
+      - postgres
+volumes:
+  postgres:
+  core:
+networks:
+  core:
