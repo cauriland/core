@@ -1,0 +1,44 @@
+{
+    "name": "@cauriland/core-state",
+    "version": "3.2.0",
+    "description": "State Management for Cauri Core",
+    "license": "MIT",
+    "contributors": [
+        "Arsel Tindo <arsel.tindo@cauri.cm>",
+        "Brian Faust <brian@ark.io>",
+        "Joshua Noack <joshua@ark.io>"
+    ],
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index",
+    "types": "dist/index",
+    "scripts": {
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "build:docs": "../../node_modules/typedoc/bin/typedoc --out docs src",
+        "clean": "rimraf dist",
+        "compile": "node ../../node_modules/typescript/bin/tsc",
+        "prepublishOnly": "yarn build",
+        "pretest": "bash ../../scripts/pre-test.sh"
+    },
+    "dependencies": {
+        "@cauriland/core-database": "3.2.0",
+        "@cauriland/core-kernel": "3.2.0",
+        "@cauriland/core-transactions": "3.2.0",
+        "@cauriland/crypto": "3.2.0",
+        "immutable": "4.0.0-rc.14",
+        "joi": "17.4.2"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "cauriland": {
+        "core": {
+            "alias": "state"
+        }
+    }
+}
