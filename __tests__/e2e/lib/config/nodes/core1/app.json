@@ -1,0 +1,95 @@
+{
+    "core": {
+        "plugins": [
+            {
+                "package": "@cauriland/core-logger-pino"
+            },
+            {
+                "package": "@cauriland/core-state"
+            },
+            {
+                "package": "@cauriland/core-database"
+            },
+            {
+                "package": "@cauriland/core-transactions"
+            },
+            {
+                "package": "@cauriland/core-magistrate-transactions"
+            },
+            {
+                "package": "@cauriland/core-transaction-pool"
+            },
+            {
+                "package": "@cauriland/core-p2p",
+                "options": {
+                    "minimumNetworkReach": 3
+                }
+            },
+            {
+                "package": "@cauriland/core-blockchain"
+            },
+            {
+                "package": "@cauriland/core-api"
+            },
+            {
+                "package": "@cauriland/core-magistrate-api"
+            },
+            {
+                "package": "@cauriland/core-webhooks"
+            },
+            {
+                "package": "@cauriland/core-forger"
+            }
+        ]
+    },
+    "relay": {
+        "plugins": [
+            {
+                "package": "@cauriland/core-logger-pino"
+            },
+            {
+                "package": "@cauriland/core-state"
+            },
+            {
+                "package": "@cauriland/core-database"
+            },
+            {
+                "package": "@cauriland/core-transactions"
+            },
+            {
+                "package": "@cauriland/core-magistrate-transactions"
+            },
+            {
+                "package": "@cauriland/core-transaction-pool"
+            },
+            {
+                "package": "@cauriland/core-p2p",
+                "options": {
+                    "minimumNetworkReach": 3
+                }
+            },
+            {
+                "package": "@cauriland/core-blockchain"
+            },
+            {
+                "package": "@cauriland/core-api"
+            },
+            {
+                "package": "@cauriland/core-magistrate-api"
+            },
+            {
+                "package": "@cauriland/core-webhooks"
+            }
+        ]
+    },
+    "forger": {
+        "plugins": [
+            {
+                "package": "@cauriland/core-logger-pino"
+            },
+            {
+                "package": "@cauriland/core-forger"
+            }
+        ]
+    }
+}
