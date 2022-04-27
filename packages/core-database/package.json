@@ -1,0 +1,41 @@
+{
+    "name": "@cauriland/core-database",
+    "version": "3.2.0",
+    "description": "Database Interface for Cauri Core",
+    "license": "MIT",
+    "contributors": [
+        "Arsel Tindo <arsel.tindo@cauri.cm>",
+        "Brian Faust <brian@ark.io>",
+        "Joshua Noack <joshua@ark.io>"
+    ],
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index",
+    "types": "dist/index",
+    "scripts": {
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "build:docs": "../../node_modules/typedoc/bin/typedoc --out docs src",
+        "clean": "rimraf dist",
+        "compile": "node ../../node_modules/typescript/bin/tsc",
+        "prepublishOnly": "yarn build",
+        "pretest": "bash ../../scripts/pre-test.sh"
+    },
+    "dependencies": {
+        "@cauriland/core-kernel": "3.2.0",
+        "@cauriland/crypto": "3.2.0",
+        "@cauriland/utils": "1.3.1",
+        "dayjs": "1.10.7",
+        "joi": "17.4.2",
+        "pg": "8.7.1",
+        "reflect-metadata": "0.1.13",
+        "typeorm": "0.2.25"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
