@@ -1,0 +1,28 @@
+{
+    "name": "@cauriland/core-magistrate-crypto",
+    "version": "3.2.0",
+    "description": "Cauri transactions for businesses and bridgechains",
+    "license": "MIT",
+    "contributors": [
+        "Arsel Tindo <arsel.tindo@cauri.cm>",
+        "Joshua Noack <joshua@ark.io>",
+        "Kristjan Košič <kristjan@ark.io>",
+        "Žan Kovač <zan@ark.io>"
+    ],
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index",
+    "types": "dist/index",
+    "scripts": {
+        "build": "yarn clean && tsc",
+        "build:watch": "yarn clean && yarn compile -w",
+        "clean": "rimraf dist",
+        "compile": "node ../../node_modules/typescript/bin/tsc",
+        "prepublishOnly": "yarn build"
+    },
+    "dependencies": {
+        "@cauriland/core-kernel": "3.2.0",
+        "@cauriland/crypto": "3.2.0"
+    }
+}
