@@ -1,0 +1,34 @@
+{
+    "name": "@cauriland/core-transactions",
+    "version": "3.2.0",
+    "description": "Transaction Services for Cauri Core",
+    "license": "MIT",
+    "contributors": [
+        "Arsel Tindo <arsel.tindo@cauri.cm>",
+        "Joshua Noack <joshua@ark.io>"
+    ],
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index",
+    "types": "dist/index",
+    "scripts": {
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "build:docs": "../../node_modules/typedoc/bin/typedoc --out docs src",
+        "clean": "rimraf dist",
+        "compile": "node ../../node_modules/typescript/bin/tsc",
+        "prepublishOnly": "yarn build"
+    },
+    "dependencies": {
+        "@cauriland/core-database": "3.2.0",
+        "@cauriland/core-kernel": "3.2.0",
+        "@cauriland/crypto": "3.2.0"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
