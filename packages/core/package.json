@@ -1,0 +1,88 @@
+{
+    "name": "@cauriland/core",
+    "version": "3.2.0",
+    "description": "Core of the Cauri Blockchain",
+    "license": "MIT",
+    "contributors": [
+        "Arsel Tindo <arsel.tindo@cauri.cm>",
+        "François-Xavier Thoorens <fx@ark.io>",
+        "Kristjan Košič <kristjan@ark.io>",
+        "Brian Faust <brian@ark.io>",
+        "Alex Barnsley <alex@ark.io>"
+    ],
+    "files": [
+        "/bin",
+        "/dist"
+    ],
+    "main": "dist/index",
+    "types": "dist/index",
+    "bin": {
+        "cauri": "./bin/run"
+    },
+    "scripts": {
+        "cauri": "node ./bin/run",
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "build:docs": "../../node_modules/typedoc/bin/typedoc --out docs src",
+        "clean": "rimraf dist",
+        "compile": "node ../../node_modules/typescript/bin/tsc",
+        "debug:forger": "node --inspect-brk ./bin/run forger:run",
+        "debug:relay": "node --inspect-brk ./bin/run relay:run",
+        "debug:core": "node --inspect-brk ./bin/run core:run",
+        "core:devnet": "cross-env CORE_PATH_CONFIG=./bin/config/devnet yarn cauri core:run",
+        "core:mainnet": "cross-env CORE_PATH_CONFIG=./bin/config/mainnet yarn cauri core:run",
+        "core:testnet": "cross-env CORE_PATH_CONFIG=./bin/config/testnet yarn cauri core:run --env=test",
+        "relay:devnet": "cross-env CORE_PATH_CONFIG=./bin/config/devnet yarn cauri relay:run",
+        "relay:mainnet": "cross-env CORE_PATH_CONFIG=./bin/config/mainnet yarn cauri relay:run",
+        "relay:testnet": "cross-env CORE_PATH_CONFIG=./bin/config/testnet yarn cauri relay:run --env=test",
+        "forger:devnet": "cross-env CORE_PATH_CONFIG=./bin/config/devnet yarn cauri forger:run",
+        "forger:mainnet": "cross-env CORE_PATH_CONFIG=./bin/config/mainnet yarn cauri forger:run",
+        "forger:testnet": "cross-env CORE_PATH_CONFIG=./bin/config/testnet yarn cauri forger:run --env=test",
+        "full:testnet": "cross-env CORE_PATH_CONFIG=./bin/config/testnet yarn cauri core:run --networkStart --env=test",
+        "prepublishOnly": "yarn build"
+    },
+    "dependencies": {
+        "@cauriland/core-api": "3.2.0",
+        "@cauriland/core-blockchain": "3.2.0",
+        "@cauriland/core-cli": "3.2.0",
+        "@cauriland/core-database": "3.2.0",
+        "@cauriland/core-forger": "3.2.0",
+        "@cauriland/core-kernel": "3.2.0",
+        "@cauriland/core-logger-pino": "3.2.0",
+        "@cauriland/core-magistrate-api": "3.2.0",
+        "@cauriland/core-magistrate-transactions": "3.2.0",
+        "@cauriland/core-p2p": "3.2.0",
+        "@cauriland/core-snapshots": "3.2.0",
+        "@cauriland/core-state": "3.2.0",
+        "@cauriland/core-transaction-pool": "3.2.0",
+        "@cauriland/core-transactions": "3.2.0",
+        "@cauriland/core-webhooks": "3.2.0",
+        "@cauriland/crypto": "3.2.0",
+        "@cauriland/utils": "1.3.1",
+        "argon2": "0.28.2",
+        "bip39": "3.0.4",
+        "boxen": "4.2.0",
+        "dayjs": "1.10.7",
+        "env-paths": "2.2.1",
+        "envfile": "5.2.0",
+        "execa": "3.4.0",
+        "fs-extra": "8.1.0",
+        "got": "11.8.2",
+        "joi": "17.4.2",
+        "kleur": "4.1.4",
+        "ngrok": "3.4.1",
+        "prompts": "2.4.0",
+        "tar": "6.1.11",
+        "type-fest": "0.21.3",
+        "wif": "2.0.6"
+    },
+    "peerDependencies": {
+        "pm2": "^4.5.0"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

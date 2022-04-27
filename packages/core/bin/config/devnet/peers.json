@@ -1,0 +1,25 @@
+{
+  "list": [
+    {
+      "ip": "194.233.168.159",
+      "port": 4301
+    },
+    {
+      "ip": "178.79.138.138",
+      "port": 4301
+    },
+    {
+      "ip": "139.162.20.43",
+      "port": 4301
+    },
+    {
+      "ip": "172.105.177.126",
+      "port": 4301
+    },
+    {
+      "ip": "139.162.133.228",
+      "port": 4301
+    }
+  ],
+  "sources": ["https://raw.githubusercontent.com/cauriland/peers/main/devnet.json"]
+}
