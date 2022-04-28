@@ -152,7 +152,7 @@ export class Command extends Commands.Command {
             description: "The number of pre-mined tokens.",
             schema: Joi.alternatives().try(Joi.string(), Joi.number()),
             promptType: "text",
-            default: "12500000000000000",
+            default: "15000000000000000",
         },
         {
             name: "delegates",

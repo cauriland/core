@@ -143,7 +143,7 @@ describe("BlockProcessor", () => {
                             type: 0,
                             typeGroup: 1,
                             version: 1,
-                            amount: Utils.BigNumber.make("12500000000000000"),
+                            amount: Utils.BigNumber.make("15000000000000000"),
                             fee: Utils.BigNumber.ZERO,
                             recipientId: "D6Z26L69gdk9qYmTv5uzk3uGepigtHY4ax",
                             timestamp: 0,

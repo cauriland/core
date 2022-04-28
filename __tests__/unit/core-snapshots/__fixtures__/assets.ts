@@ -33,7 +33,7 @@ export const blocksBigNumber: Models.Block[] = [
         previousBlock: "0",
         height: 1,
         numberOfTransactions: 153,
-        totalAmount: BigNumber.make(12500000000000000),
+        totalAmount: BigNumber.make(15000000000000000),
         totalFee: BigNumber.make(0),
         reward: BigNumber.make(0),
         payloadLength: 35960,
@@ -68,11 +68,11 @@ export const blocks: Models.Block[] = [
         previousBlock: "0",
         height: 1,
         numberOfTransactions: 153,
-        // totalAmount: BigNumber.make(12500000000000000),
+        // totalAmount: BigNumber.make(15000000000000000),
         // totalFee: BigNumber.make(0),
         // reward: BigNumber.make(0),
         // @ts-ignore
-        totalAmount: BigInt(12500000000000000),
+        totalAmount: BigInt(15000000000000000),
         // @ts-ignore
         totalFee: BigInt(0),
         // @ts-ignore

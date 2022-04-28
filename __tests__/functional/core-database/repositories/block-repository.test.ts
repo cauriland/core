@@ -120,7 +120,7 @@ describe("BlockRepository.getStatistics", () => {
         expect(statistics).toStrictEqual({
             count: "3",
             numberOfTransactions: "102",
-            totalAmount: "12500000000000000",
+            totalAmount: "15000000000000000",
             totalFee: "0",
         });
     });
