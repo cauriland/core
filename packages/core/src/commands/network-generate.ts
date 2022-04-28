@@ -173,7 +173,7 @@ export class Command extends Commands.Command {
             description: "The maximum number of transactions per block.",
             schema: Joi.number(),
             promptType: "number",
-            default: 150,
+            default: 160,
         },
         {
             name: "maxBlockPayload",

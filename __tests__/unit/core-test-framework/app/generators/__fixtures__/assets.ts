@@ -13,7 +13,7 @@ export const sandboxOptions: SandboxOptions = {
             premine: "15300000000000000",
             delegates: 101,
             blocktime: 8,
-            maxTxPerBlock: 150,
+            maxTxPerBlock: 160,
             maxBlockPayload: 2097152,
             rewardHeight: 324000,
             rewardAmount: 150000000,
