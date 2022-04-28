@@ -1,7 +1,7 @@
 # Cauri Core - Public API
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/cauriland/core/main/banner.png" />
+    <img src="https://github.com/cauriland/core/raw/main/banner.png" />
 </p>
 
 ## Documentation

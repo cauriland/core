@@ -1,7 +1,7 @@
 # Cauri - Crypto
 
 <p align="center">
-    <img src="./banner.png?sanitize=true" />
+    <img src="https://github.com/cauriland/core/raw/main/packages/crypto/banner.png" />
 </p>
 
 ## Documentation

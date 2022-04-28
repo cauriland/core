@@ -1,7 +1,7 @@
 # Cauri Core
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/cauriland/core/main/banner.png" />
+    <img src="https://github.com/cauriland/core/raw/main/banner.png" />
 </p>
 
 [![Build Status](https://badgen.now.sh/github/status/cauriland/core/main)](https://github.com/cauriland/core/actions)

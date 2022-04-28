@@ -354,7 +354,7 @@ export const versionNext = {
                 plugins: ["@oclif/plugin-autocomplete", "@oclif/plugin-commands", "@oclif/plugin-help"],
             },
             readme:
-                '# Cauri Core - Core\n\n<p align="center">\n    <img src="https://raw.githubusercontent.com/cauriland/core/main/banner.png" />\n</p>\n\n## Documentation\n\nYou can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.cauri.cm/guidebook/core/plugins/required/core.html).\n\n## Security\n\nIf you discover a security vulnerability within this package, please send an e-mail to security@cauri.cm. All security vulnerabilities will be promptly addressed.\n\n## Credits\n\nThis project exists thanks to all the people who [contribute](../../../../contributors).\n\n## License\n\n[MIT](LICENSE) © [Cauri Land](https://cauri.cm)\n',
+                '# Cauri Core - Core\n\n<p align="center">\n    <img src="https://github.com/cauriland/core/raw/main/banner.png" />\n</p>\n\n## Documentation\n\nYou can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.cauri.cm/guidebook/core/plugins/required/core.html).\n\n## Security\n\nIf you discover a security vulnerability within this package, please send an e-mail to security@cauri.cm. All security vulnerabilities will be promptly addressed.\n\n## Credits\n\nThis project exists thanks to all the people who [contribute](../../../../contributors).\n\n## License\n\n[MIT](LICENSE) © [Cauri Land](https://cauri.cm)\n',
             readmeFilename: "README.md",
             _id: "@cauriland/core@2.5.0-next.10",
             _nodeVersion: "10.16.0",
