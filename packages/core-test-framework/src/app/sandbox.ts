@@ -52,7 +52,7 @@ export class Sandbox {
                 delegates: 101,
                 blocktime: 8,
                 maxTxPerBlock: 160,
-                maxBlockPayload: 2097152,
+                maxBlockPayload: 6720000,
                 rewardHeight: 324000,
                 rewardAmount: 150000000,
                 pubKeyHash: 28,
