@@ -145,16 +145,16 @@ describe("BlockRepository.getDelegatesForgedBlocks", () => {
         const delegatesForgedBlocks = await blockRepository.getDelegatesForgedBlocks();
         expect(delegatesForgedBlocks).toStrictEqual([
             {
-                generatorPublicKey: block1.data.generatorPublicKey,
-                totalFees: "0",
-                totalRewards: "0",
-                totalProduced: "1",
-            },
-            {
                 generatorPublicKey: bip39.publicKey,
                 totalFees: "0",
                 totalRewards: "200",
                 totalProduced: "2",
+            },
+            {
+                generatorPublicKey: block1.data.generatorPublicKey,
+                totalFees: "0",
+                totalRewards: "0",
+                totalProduced: "1",
             },
         ]);
     });
