@@ -6,13 +6,13 @@ import { RoundResource } from "@packages/core-api/src/resources";
 let resource: RoundResource;
 
 const round = {
-    publicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    publicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
     round: Utils.BigNumber.make("2"),
     balance: Utils.BigNumber.make("245100000000000"),
 };
 
 const roundTransformed = {
-    publicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    publicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
     votes: "245100000000000",
 };
 

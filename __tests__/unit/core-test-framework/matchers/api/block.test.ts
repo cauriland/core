@@ -18,7 +18,7 @@ beforeEach(() => {
         reward: Utils.BigNumber.make("0"),
         payloadLength: 0,
         payloadHash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        generatorPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+        generatorPublicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
         blockSignature:
             "30450221009b3a032a50e79eca6f8d5851191e8edd2b36e6acf5f800632ddec5b968e6e09502200ee2cd4065386d77c3af255d416254a5946eeccf865d5413636a7b844b0bf581",
         idHex: "ca3fdcbcf44698b1",

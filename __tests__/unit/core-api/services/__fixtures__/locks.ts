@@ -23,7 +23,7 @@ export const lockResource = {
     lockId: "8816f8d8c257ea0c951deba911266394b0f2614df023f8b4ffd9da43d36efd9d",
     recipientId: "02275d8577a0ec2b75fc8683282d53c5db76ebc54514a80c2854e419b793ea259a",
     secretHash: "secretHash",
-    senderPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    senderPublicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
     timestamp: {
         epoch: 111180032,
         human: "2025-10-14T19:53:31.820Z",

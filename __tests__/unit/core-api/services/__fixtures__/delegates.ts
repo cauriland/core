@@ -3,7 +3,7 @@ import { Utils as AppUtils } from "@packages/core-kernel";
 export const delegateResource = {
     username: "delegate_username",
     address: "CNBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo",
-    publicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    publicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
     votes: AppUtils.BigNumber.ONE,
     rank: 12,
     isResigned: false,
@@ -24,7 +24,7 @@ export const delegateResource = {
 export const delegateResourceWithLastBlock = {
     username: "delegate_username",
     address: "CNBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo",
-    publicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    publicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
     votes: AppUtils.BigNumber.ONE,
     rank: 12,
     isResigned: false,

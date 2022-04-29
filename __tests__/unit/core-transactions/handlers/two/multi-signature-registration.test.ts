@@ -368,7 +368,7 @@ describe("MultiSignatureRegistrationTransaction", () => {
 
             await expect(handler.throwIfCannotEnterPool(multiSignatureTransaction)).rejects.toThrow(
                 new Contracts.TransactionPool.PoolError(
-                    "Sender 03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37 already has a transaction of type '4' in the pool",
+                    "Sender 032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5 already has a transaction of type '4' in the pool",
                     "ERR_PENDING",
                 ),
             );

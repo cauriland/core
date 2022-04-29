@@ -5,7 +5,7 @@ import { Utils } from "@packages/crypto";
 export const dummy = {
     plainPassphrase: "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire",
     bip38Passphrase: "6PYTQC4c2vBv6PGvV4HibNni6wNsHsGbR1qpL1DfkCNihsiWwXnjvJMU4B",
-    publicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    publicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
     address: "CNBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo",
 };
 
@@ -20,7 +20,7 @@ export const expectedBlock = {
     totalFee: Utils.BigNumber.make(500000000),
     reward: Utils.BigNumber.make(0),
     payloadLength: 1600,
-    generatorPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    generatorPublicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
 };
 
 export const optionsDefault = {

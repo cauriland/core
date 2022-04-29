@@ -96,8 +96,8 @@ describe("BlocksController", () => {
                 total: "300",
             },
             generator: {
-                address: "DBYyh2vXcigrJGUHfvmYxVxEqeH7vomw6x",
-                publicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+                address: "DRCYHpiv5FWB8FFjrCLFpb6TcQprkymJZF",
+                publicKey: "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5",
                 username: "delegate",
             },
             height: 2,

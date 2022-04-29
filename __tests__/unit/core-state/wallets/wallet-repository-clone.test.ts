@@ -263,7 +263,7 @@ describe("Wallet Repository Clone", () => {
     });
 
     describe("findByPublicKey", () => {
-        const publicKey = "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37";
+        const publicKey = "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5";
 
         it("should copy and index wallet from blockchain wallet repository if exist in blockchain wallet repository", () => {
             const blockchainWallet = walletRepositoryBlockchain.findByPublicKey(publicKey);
@@ -467,7 +467,7 @@ describe("Wallet Repository Clone", () => {
     });
 
     describe("hasByPublicKey", () => {
-        const publicKey = "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37";
+        const publicKey = "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5";
 
         it("should return true if wallet exist in blockchain wallet repository", () => {
             walletRepositoryBlockchain.findByPublicKey(publicKey);
@@ -617,7 +617,7 @@ describe("Wallet Repository Clone", () => {
     });
 
     describe("getNonce", () => {
-        const publicKey = "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37";
+        const publicKey = "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5";
 
         it("should return 0 if wallet does not exists", () => {
             expect(walletRepositoryClone.getNonce(publicKey)).toEqual(Utils.BigNumber.ZERO);
@@ -665,7 +665,7 @@ describe("Wallet Repository Clone", () => {
         it("should return all wallets from clone and blockchain wallet repository by public key", () => {
             expect(walletRepositoryClone.allByPublicKey().length).toEqual(0);
 
-            walletRepositoryClone.findByPublicKey("03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37");
+            walletRepositoryClone.findByPublicKey("032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5");
             expect(walletRepositoryClone.allByPublicKey().length).toEqual(1);
 
             walletRepositoryBlockchain.findByPublicKey(

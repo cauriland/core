@@ -168,7 +168,7 @@ describe("RoundState", () => {
             const lastBlock = Blocks.BlockFactory.fromData(block1760000);
             stateStore.getLastBlock.mockReturnValue(lastBlock);
 
-            const delegatePublicKey = "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37";
+            const delegatePublicKey = "032516d62b876c5e0d599f8923b90b81c9894419cd35874d62945e0cdb007f22e5";
             const delegateVoteBalance = Utils.BigNumber.make("100");
             const roundDelegateModel = { publicKey: delegatePublicKey, balance: delegateVoteBalance };
             databaseService.getRound.mockResolvedValueOnce([roundDelegateModel]);
